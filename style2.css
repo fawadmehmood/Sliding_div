@@ -1,116 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-body{
-    height: 100%;
-     background: #466368; 
-     background-image: linear-gradient(45deg, rgb(100, 136, 128) 10%, rgb(41, 63, 80) 90%); 
-     /* background: linear-gradient(to right bottom, rgb(100, 136, 128), rgb(41, 63, 80)); */
-     background-attachment: fixed; 
-
-}
-
-.container{
-    width: 90%;
-    height: 35rem;
-    /* background-color: brown; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    margin: 0 1rem;
-    /* padding: 3.5rem; */
-
+body {
+  background: #466368;
+  background-image: linear-gradient(
+    45deg,
+    rgb(100, 136, 128) 10%,
+    rgb(41, 63, 80) 90%
+  );
+  /* background: linear-gradient(to right bottom, rgb(100, 136, 128), rgb(41, 63, 80)); */
+  background-attachment: fixed;
 }
 
-.main-wrapper{
-    width: 55rem;
-    height: 30rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    border-radius: 0.5rem;
-    /* overflow: hidden; */
-    margin: auto;
-    box-shadow: 0 0 0.9rem rgba(0,0,0 , 0.5);
-  
+p {
+  height: 100%;
+}
+.container {
+  height: 100vh;
+  /* width: 90%; */
+  /* background-color: brown; */
+
+  /* padding: 3.5rem; */
 }
 
-.img-wrapper{
-    background: #466368; 
-    background: linear-gradient(to right top, rgb(100, 136, 128), rgb(41, 63, 80));
-    width: 100%;
-    height: 100%;
-     /* background-image:linear-gradient(to right bottom, rgb(100, 136, 128, 0.5), rgb(41, 63, 80, 0.5)),
+.main-wrapper {
+  width: 55rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 0.5rem;
+  /* overflow: hidden; */
+  margin: auto;
+  box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.5);
+}
+
+.img-wrapper {
+  background: #466368;
+  background: linear-gradient(
+    to right top,
+    rgb(100, 136, 128),
+    rgb(41, 63, 80)
+  );
+  width: 100%;
+  height: 100%;
+  /* background-image:linear-gradient(to right bottom, rgb(100, 136, 128, 0.5), rgb(41, 63, 80, 0.5)),
     url("https://images.unsplash.com/photo-1555652736-e92021d28a10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
    background-repeat: no-repeat;
    background-size: cover;    */
-
 }
 
-
-
-.img-wrapper img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
 }
 
-.specifications-wrapper{
-    /* display: none; */
-    width: 0%;
-    height: 100%;
-    background: #466368; 
-    background-image: linear-gradient(45deg, rgb(100, 136, 128) 10%, rgb(41, 63, 80) 90%); 
+.specifications-wrapper {
+  /* display: none; */
+  width: 0%;
+  height: 100%;
+  background: #466368;
+  background-image: linear-gradient(
+    45deg,
+    rgb(100, 136, 128) 10%,
+    rgb(41, 63, 80) 90%
+  );
 
-    /* background-color: black; */
-    transition: all 1s ease;
-    overflow: hidden;
+  /* background-color: black; */
+  transition: all 1s ease;
+  overflow: hidden;
 }
 
-.img-wrapper:hover + .specifications-wrapper{
-     width: 100%;
-} 
-
-.specifications-wrapper h1{
-    text-align: center;
-    margin-top: 2.8rem; 
-    font-weight: 500;
-    font-size: 3rem;
-    color: #eee;
+.img-wrapper:hover + .specifications-wrapper {
+  width: 100%;
 }
-.specifications{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+
+.specifications-wrapper h1 {
+  text-align: center;
+  margin-top: 2.8rem;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #eee;
+}
+.specifications {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   /* margin-top: 2rem; */
 }
 
-.all-specs{
-    /* margin: auto 0; */
-    /* margin: 1.8rem 0; */
-    padding: 1.8rem 1rem 0 1rem;
-
+.all-specs {
+  /* margin: auto 0; */
+  /* margin: 1.8rem 0; */
+  padding: 1.8rem 1rem 0 1rem;
 }
-.specs{
-    border-bottom: 0.1rem solid #ddd;
-    padding: 1.4rem 0 0 0;
-}
-
-.specs p{
-    color: #eee;
-    font-weight: 500;
-    font-size: 1.6rem;
+.specs {
+  border-bottom: 0.1rem solid #ddd;
+  padding: 1.4rem 0 0 0;
 }
 
+.specs p {
+  color: #eee;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
